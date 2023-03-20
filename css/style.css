@@ -47,7 +47,6 @@ main {
     background-size: cover;
 }
 
-
 @media all and (max-width: 767px){
     .slide {
       height: 400px;
