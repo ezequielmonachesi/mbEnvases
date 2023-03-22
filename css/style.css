@@ -9,6 +9,12 @@ body {
 main {
   margin-top: 76px;
 }
+h2, .envasesmb{
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+}
+
+
 .slide {
   height: 463px;
   object-fit:cover;
@@ -39,12 +45,14 @@ main {
     background-position: center;
     background-repeat: no-repeat no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .queHacemos{
     background-image:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/queHacemos.jpg);
     background-position: center;
     background-repeat: no-repeat no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 
