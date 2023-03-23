@@ -54,7 +54,9 @@ h2, .envasesmb{
     background-size: cover;
     background-attachment: fixed;
 }
-
+.cursor-pointer:hover{
+  cursor:pointer;
+}
 
 @media all and (min-width: 768px) and (max-width: 991px){
   .slide {
