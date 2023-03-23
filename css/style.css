@@ -58,14 +58,14 @@ h2, .envasesmb{
 
 @media all and (min-width: 768px) and (max-width: 991px){
   .slide {
-    height: 410px;
+    height: 310px;
     object-fit:cover;
   }
 }
 
 @media all and (max-width: 767px){
     .slide {
-      height: 710px;
+      height: 550px;
       object-fit:cover;
     }
 }
