@@ -13,6 +13,22 @@ h2, .envasesmb{
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
 }
+.zoom:hover{
+}
+.imgZoom{
+  filter: grayscale(20%);
+}
+.imgZoom:hover{
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+.borde-inf-ul{
+  border-radius: 0 0 0 5px;
+}
+.letrasUl{
+  font-size: 0.85rem;
+}
 
 
 .slide {
@@ -56,6 +72,9 @@ h2, .envasesmb{
 }
 .cursor-pointer:hover{
   cursor:pointer;
+}
+.cursor-default{
+  cursor: default;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px){
