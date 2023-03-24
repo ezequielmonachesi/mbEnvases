@@ -9,14 +9,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
 "
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>MB Envases</title>
   </head>
   <body class="position-relative">
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary border-bottom border-success border-opacity-50 shadow">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="./index.html">
             <img
               src="./assets/logo.jpg"
               alt="Bootstrap"
@@ -24,8 +25,13 @@
               height="50"
             />
           </a>
+          <a
+            href="https://www.facebook.com/jogimo.bernis"
+            target="_blank"
+            class="nav-link ms-auto d-lg-none"
+            ><i class="fa-brands fa-facebook fs-1 text-secondary"></i></a>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler text-success text-opacity-50 ms-3 ms-md-3"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -38,7 +44,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="./index.html"
                   >Inicio</a
                 >
               </li>
@@ -50,6 +56,13 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item ms-3">
+                <a
+                  href="https://www.facebook.com/jogimo.bernis"
+                  target="_blank"
+                  class="nav-link"
+                  ><i class="fa-brands fa-facebook fs-3"></i></a>
               </li>
             </ul>
           </div>
@@ -79,11 +92,14 @@
           <p class="my-4 text-secondary">
             Contamos con diversa variedad de productos en Envases MB
           </p>
-            <button type="button" class="btn btn-success mx-2" 
+          <button
+            type="button"
+            class="btn btn-success mx-2"
             data-bs-toggle="modal"
-            data-bs-target="#whatsapp">
-              Consultanos
-            </button><a href="" class="mt-5"
+            data-bs-target="#whatsapp"
+          >
+            Consultanos</button
+          ><a href="" class="mt-5"
             ><button type="button" class="btn btn-outline-success mx-2">
               Sobre nosotros
             </button></a
@@ -470,7 +486,9 @@
       </section>
       <!-- Seguinos en facebook -->
       <h4 class="text-center mt-5 mt-lg-0">
-        <span class="border-start border-success border-3 px-2">Seguinos en facebook</span>
+        <span class="border-start border-success border-3 px-2"
+          >Seguinos en facebook</span
+        >
         <a
           href="https://www.facebook.com/jogimo.bernis"
           target="_blank"
@@ -490,9 +508,12 @@
             <p class="mt-4 mt-md-3 px-lg-5">
               Poveemos una amplia gama de envases y productos de embalajes, como
               potes de telgopor y de plásticos, rollos de papel film: stretch,
-              manteca, aluminio. Rollos de bolsas de papeles gris, Kraft, de regalo, servilleta, higiénico. Papel térmicos, de obra y doble químico. Toallas plegables, servilletas para aparatos, confiteria, service express, servilletas
-              "elegantes".<br />Siempre cuidando y asegurando la calidad de tus
-              alimentos con los mejores productos del mercado.
+              manteca, aluminio. Rollos de bolsas de papeles gris, Kraft, de
+              regalo, servilleta, higiénico. Papel térmicos, de obra y doble
+              químico. Toallas plegables, servilletas para aparatos, confiteria,
+              service express, servilletas "elegantes".<br />Siempre cuidando y
+              asegurando la calidad de tus alimentos con los mejores productos
+              del mercado.
             </p>
           </div>
         </div>
@@ -531,9 +552,7 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h2 class="modal-title fs-5" id="envasesmb">
-                Envases MB
-              </h2>
+              <h2 class="modal-title fs-5" id="envasesmb">Envases MB</h2>
               <button
                 type="button"
                 class="btn-close"
@@ -541,11 +560,10 @@
                 aria-label="Close"
               ></button>
             </div>
-            <div
-              class="modal-body"
-            ><div>
-              <img src="./assets/escribenos2.svg" alt="" class="w-100">
-            </div>
+            <div class="modal-body">
+              <div>
+                <img src="./assets/escribenos2.svg" alt="" class="w-100" />
+              </div>
               <div class="text-center my-1">
                 <a
                   href="https://wa.me/5493876550112?text=Dejanos%20tu%20consulta"
@@ -562,8 +580,7 @@
                   >Rosario de la Frontera</a
                 >
               </div>
-              <div class="text-center my-1">
-              </div>
+              <div class="text-center my-1"></div>
             </div>
             <div class="modal-footer">
               <button
@@ -673,7 +690,8 @@
     <footer class="bg-dark mt-5 pt-2 pb-1">
       <section class="container">
         <p class="text-secondary text-center mt-4">
-          <i class="bi bi-c-circle me-1"></i>Todos los derechos reservados. Envases MB.
+          <i class="bi bi-c-circle me-1"></i>Todos los derechos reservados.
+          Envases MB.
         </p>
       </section>
     </footer>
