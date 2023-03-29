@@ -89,8 +89,6 @@ h2, .envasesmb{
 }
 .cardsZoom:hover{
   filter:grayscale(0%);
-  transform: scale(1.05);
-  transition: all 0.5s;
 }
 
 @media all and (min-width: 768px) and (max-width: 991px){
