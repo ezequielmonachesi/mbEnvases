@@ -76,6 +76,13 @@ h2, .envasesmb{
 .cursor-default{
   cursor: default;
 }
+.gastronomia{
+  background: url(../assets/fondoGastronomia.jpg);
+  background-position: center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 @media all and (min-width: 768px) and (max-width: 991px){
   .slide {
