@@ -1,82 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 body {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 main {
   margin-top: 76px;
 }
-h2, .envasesmb{
-  font-family: 'Libre Baskerville', serif;
+h2,
+.envasesmb {
+  font-family: "Libre Baskerville", serif;
   font-weight: 400;
 }
-.zoom:hover{
+.zoom:hover {
 }
-.imgZoom{
+.imgZoom {
   filter: grayscale(20%);
 }
-.imgZoom:hover{
+.imgZoom:hover {
   filter: grayscale(0%);
   transform: scale(1.05);
   transition: all 0.5s;
 }
-.borde-inf-ul{
+.borde-inf-ul {
   border-radius: 0 0 0 5px;
 }
-.letrasUl{
+.letrasUl {
   font-size: 0.85rem;
 }
 
-
 .slide {
   height: 463px;
-  object-fit:cover;
+  object-fit: cover;
 }
-.slide1{
-  background-image:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/slide1.jpg);
+.slide1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/slide1.jpg);
   background-position: center;
   background-repeat: no-repeat no-repeat;
   background-size: cover;
-
 }
-.slide2{
-  background-image:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/slide2.jpg);
+.slide2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/slide2.jpg);
   background-position: center;
   background-repeat: no-repeat no-repeat;
   background-size: cover;
-
 }
-.slide3{
-  background-image:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/slide3.jpg);
+.slide3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/slide3.jpg);
   background-position: center;
   background-repeat: no-repeat no-repeat;
   background-size: cover;
-
 }
-.banner{
-    background-image:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/nurestrosProductos.jpg);
-    background-position: center;
-    background-repeat: no-repeat no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.banner {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/nurestrosProductos.jpg);
+  background-position: center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.queHacemos{
-    background-image:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(../assets/queHacemos.jpg);
-    background-position: center;
-    background-repeat: no-repeat no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.queHacemos {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/queHacemos.jpg);
+  background-position: center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
-.cursor-pointer:hover{
-  cursor:pointer;
+.cursor-pointer:hover {
+  cursor: pointer;
 }
-.cursor-default{
+.cursor-default {
   cursor: default;
 }
-.gastronomia{
+.gastronomia {
   background: url(../assets/fondoGastronomia.jpg);
   background-position: center;
   background-repeat: no-repeat no-repeat;
@@ -84,23 +106,29 @@ h2, .envasesmb{
   background-attachment: fixed;
 }
 
-.cardsZoom{
-  filter:grayscale(50%);
+.cardsZoom {
+  filter: grayscale(50%);
 }
-.cardsZoom:hover{
-  filter:grayscale(0%);
+.cardsZoom:hover {
+  filter: grayscale(0%);
 }
 
-@media all and (min-width: 768px) and (max-width: 991px){
+@media all and (min-width: 768px) and (max-width: 991px) {
   .slide {
     height: 310px;
-    object-fit:cover;
+    object-fit: cover;
+  }
+  .cardsZoom {
+    filter: grayscale(0%);
   }
 }
 
-@media all and (max-width: 767px){
-    .slide {
-      height: 550px;
-      object-fit:cover;
-    }
+@media all and (max-width: 767px) {
+  .slide {
+    height: 550px;
+    object-fit: cover;
+  }
+  .cardsZoom {
+    filter: grayscale(0%);
+  }
 }
