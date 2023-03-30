@@ -1,12 +1,14 @@
 
 class Producto {
   #nombre;
-  #precio;
+  #color;
   #img;
-  constructor(nombre, precio, img) {
+  #precio;
+  constructor(nombre, color, img, precio) {
     this.#nombre = nombre;
-    this.#precio = precio;
+    this.#color = color;
     this.#img = img;
+    this.#precio = precio;
   }
   get nombre() {
     return this.#nombre;
@@ -14,26 +16,33 @@ class Producto {
   set nombre(nuevoNombre) {
     this.#nombre = nuevoNombre;
   }
-  get precio() {
-    return this.#precio;
-  }
-  set precio(nuevoPrecio) {
-    this.#precio = nuevoPrecio;
-  }
   get img() {
     return this.#img;
   }
   set img(nuevaImg) {
     this.#img = nuevaImg;
   }
+  get color() {
+    return this.#color;
+  }
+  set color(nuevoColor) {
+    this.#color = nuevoColor;
+  }
+  get precio() {
+    return this.#precio;
+  }
+  set precio(nuevoPrecio) {
+    this.#precio = nuevoPrecio;
+  }
 }
 
-let cajaDePizza = new Producto("Caja de piza", 350, '../assets/productos/caja-pizza.jpg');
-let cajaLomo = new Producto("Caja de lomo", 250, '../assets/productos/cajaLomo.jpg');
-let blonda = new Producto("Blonda", 600, '../assets/productos/blonda.jpg')
-let bolsaRinion = new Producto("Bolsa Riñonera", 800, '../assets/productos/bolsa-riñon.jpg')
+let cajaDePizza = new Producto("Caja de piza", "Marrón", '../assets/productos/caja-pizza.jpg', 350);
+let cajaLomo = new Producto("Caja de lomo", "Blanco", '../assets/productos/cajaLomo.jpg', 250);
+let blonda = new Producto("Blonda", "Blanco", '../assets/productos/blonda.jpg', 600)
+let bolsaRinion = new Producto("Bolsa Riñonera", "Consultar", '../assets/productos/bolsa-riñon.jpg', 800)
+let papelDobleQ = new Producto("Papel doble químico", "Blanco", '../assets/productos/papel-quimico.jpg', 800)
 
-let productos = [cajaDePizza, cajaLomo, blonda, bolsaRinion];
+let productos = [cajaDePizza, cajaLomo, blonda, bolsaRinion, papelDobleQ];
 
 const container = document.querySelector('#cardProductos')
 
@@ -51,10 +60,10 @@ productos.forEach((item)=>{
                   </div>
                 </article>
                 <ul class="list-unstyled text-start bg-black text-white bg-opacity-50 borde-inf-ul position-absolute bottom-0 start-0 m-0 p-1 cursor-default">
-                  <li class="letrasUl">Marcas: todas</li>
+                  <li class="letrasUl">Marcas: Todas</li>
                   <li class="letrasUl">Medidas: Todas</li>
-                  <li class="letrasUl">Color: marrón</li>
-                  <li class="letrasUl">Precio: $${item.precio}</li>
+                  <li class="letrasUl">Color: ${item.color}</li>
+                  <li class="letrasUl">Precio: Cunsultar</li>
                 </ul>
               </aside>
   `;
