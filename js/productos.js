@@ -63,7 +63,7 @@ productos.forEach((item)=>{
                   <li class="letrasUl">Marcas: Todas</li>
                   <li class="letrasUl">Medidas: Todas</li>
                   <li class="letrasUl">Color: ${item.color}</li>
-                  <li class="letrasUl">Precio: Cunsultar</li>
+                  <li class="letrasUl">Precio: $${item.precio}</li>
                 </ul>
               </aside>
   `;
