@@ -6,7 +6,8 @@ export default class Producto {
   #img;
   #precio;
   #tipo;
-  constructor(codigo = uuidv4(), nombre, medidas, color, img, precio) {
+  #descripcion;
+  constructor(codigo = uuidv4(), nombre, medidas, color, img, precio, tipo, descripcion) {
     this.#codigo = codigo;
     this.#nombre = nombre;
     this.#medidas = medidas;
@@ -14,6 +15,7 @@ export default class Producto {
     this.#img = img;
     this.#precio = precio;
     this.#tipo = tipo;
+    this.#descripcion = descripcion;
   }
   get codigo(){
     return this.#codigo;
@@ -57,6 +59,12 @@ export default class Producto {
   set tipo(nuevoTipo){
     this.#tipo = nuevoTipo;
   }
+  get descripcion (){
+    return this.#descripcion;
+  }
+  set descripcion (nuevaDescripcion){
+    this.#descripcion = nuevaDescripcion;
+  }
 
   toJSOSN(){
     return{
@@ -66,7 +74,8 @@ export default class Producto {
       color: this.#color,
       img: this.#img,
       precio: this.#precio,
-      tipo: this.#tipo
+      tipo: this.#tipo,
+      descripcion:this.#descripcion
     }
   }
 }
