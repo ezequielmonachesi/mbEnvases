@@ -10,30 +10,33 @@ let productos = [cajaDePizza, cajaLomo, blonda, bolsaRinion, papelDobleQ];
 
 const container = document.querySelector('#cardProductos')
 
-productos.forEach((item)=>{
-  // Construir contenido de la card
-  const content = `
-            <aside class="card position-relative border rounded-3 shadow imgZoom h-100 m-2">
-                <img src="${item.img}" alt="caja-pizza" class="w-100  rounded-2 altoAncho">
-                <article class="position-absolute top-50 start-50 translate-middle">
-                  <div class="mb-5 text-center">
-                    <h4 class="fw-bold cursor-default nombre">${item.nombre}</h4>
-                    <button type="button" class="btn btn-success mb-4" 
-                    data-bs-toggle="modal"
-                    data-bs-target="#whatsapp">Consultar</button>
-                  </div>
-                </article>
-                <ul class="list-unstyled text-start bg-black text-white bg-opacity-50 borde-inf-ul position-absolute bottom-0 start-0 m-0 p-1 cursor-default">
-                  <li class="letrasUl">Marcas: Todas</li>
-                  <li class="letrasUl">Medidas: Todas</li>
-                  <li class="letrasUl">Color: ${item.color}</li>
-                  <li class="letrasUl">Precio: Consultar</li>
-                </ul>
-              </aside>
-  `;
-  // Agregar elemento de tarjeta recién creado al contenedor
-  container.innerHTML+=content;
-})
+function mostrarProductos(){
+  productos.forEach((item)=>{
+    // Construir contenido de la card
+    const content = `
+              <aside class="card position-relative border rounded-3 shadow imgZoom h-100 m-2">
+                  <img src="${item.img}" alt="caja-pizza" class="w-100  rounded-2 altoAncho">
+                  <article class="position-absolute top-50 start-50 translate-middle">
+                    <div class="mb-5 text-center">
+                      <h4 class="fw-bold cursor-default nombre">${item.nombre}</h4>
+                      <button type="button" class="btn btn-success mb-4" 
+                      data-bs-toggle="modal"
+                      data-bs-target="#whatsapp">Consultar</button>
+                    </div>
+                  </article>
+                  <ul class="list-unstyled text-start bg-black text-white bg-opacity-50 borde-inf-ul position-absolute bottom-0 start-0 m-0 p-1 cursor-default">
+                    <li class="letrasUl">Marcas: Todas</li>
+                    <li class="letrasUl">Medidas: Todas</li>
+                    <li class="letrasUl">Color: ${item.color}</li>
+                    <li class="letrasUl">Precio: Consultar</li>
+                  </ul>
+                </aside>
+    `;
+    // Agregar elemento de tarjeta recién creado al contenedor
+    container.innerHTML+=content;
+  })
+}
+mostrarProductos()
 
 let inputBuscar = document.getElementById('btnBuscar');
 let formBtnBuscar = document.querySelector('form');

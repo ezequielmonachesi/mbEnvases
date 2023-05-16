@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>MB Envases</title>
+  </head>
+  <body class="position-relative">
+    <header>
+      <nav
+        class="navbar fixed-top navbar-expand-lg bg-body-tertiary border-bottom border-success border-opacity-50 shadow"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../assets/logo.png"
+              alt="Bootstrap"
+              width="100"
+              height="50"
+            />
+          </a>
+          <a
+            href="https://www.facebook.com/jogimo.bernis"
+            target="_blank"
+            class="nav-link ms-auto d-lg-none"
+            ><i class="fa-brands fa-facebook fs-1 text-secondary"></i
+          ></a>
+          <button
+            class="navbar-toggler text-success text-opacity-50 ms-3 ms-md-3"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="./productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="administrador.html"
+                  >Administrador</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a
+                  href="https://www.facebook.com/jogimo.bernis"
+                  target="_blank"
+                  class="nav-link"
+                  ><i class="fa-brands fa-facebook fs-3"></i
+                ></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+                id="btnBuscar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container">
+        <h3 class="display-3 text-center">Administrador de películas</h3>
+        <hr />
+        <p class="mt-1">
+          Opciones:
+          <button
+            type="button"
+            class="btn btn-outline-primary mx-2"
+            id="btnAgregarPelicula"
+          >
+            <i class="bi bi-clipboard-plus-fill"></i>
+          </button>
+        </p>
+        <h4 class="display-4">Lista de Pelis</h4>
+        <hr />
+        <article class="table-responsive">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Título</th>
+                <th scope="col">Descripción</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Género</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </article>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="modalAdministrarPelicula"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Administrar Pelicula
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form id="formPelicula">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <label for="codigo" class="form-label">Código</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="codigo"
+                        id="codigo"
+                        disabled
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="titulo" class="form-label">Título *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Ej: Spiderman"
+                        aria-label="titulo"
+                        id="titulo"
+                        maxlength="30"
+                        minlength="3"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="descripcion" class="form-label"
+                        >Descripción *</label
+                      >
+                      <textarea
+                        type="text"
+                        class="form-control"
+                        placeholder="Ej: Érase una vez en una ciudad..."
+                        aria-label="descripcion"
+                        id="descripcion"
+                        maxlength="1000"
+                        minlength="3"
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <label for="imagen" class="form-label">Imágen *</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="https://es.web.img3.acsta.net/c_310_420/pictures/23/02/20/17/29/1574086.jpg"
+                        aria-label="imagen"
+                        id="imagen"
+                        maxlength="300"
+                        minlength="3"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="genero" class="form-label">Género *</label>
+                      <select
+                        class="form-select"
+                        aria-label="Genero de pelicula"
+                        id="genero"
+                      >
+                        <option selected value="">Seleccione una opción</option>
+                        <option value="Accion">Acción</option>
+                        <option value="Aventura">Aventura</option>
+                        <option value="Comedia">Comedia</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Drama">Drama</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <label for="anio" class="form-label">Año</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        aria-label="anio"
+                        placeholder="Ej: 2023"
+                        id="anio"
+                        min="1"
+                        max="10000"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="duracion" class="form-label">Duración</label>
+                      <input
+                        type="number"
+                        class="form-control"
+                        aria-label="duracion"
+                        placeholder="Ej: 90 min"
+                        id="duracion"
+                        min="1"
+                        max="500"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="pais" class="form-label">País</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="pais"
+                        placeholder="Ej: Argentina"
+                        id="pais"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="director" class="form-label">Director</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="director"
+                        placeholder="Ej: Steven Spielberg"
+                        id="director"
+                      />
+                    </div>
+                    <div class="col-12">
+                      <label for="reparto" class="form-label">Reparto</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        aria-label="reparto"
+                        placeholder="Ej: Ben Affleck, Matt Damon, Jason Bateman, Viola Davis"
+                        id="reparto"
+                        minlength="5"
+                        maxlength="1000"
+                      />
+                    </div>
+                    <div
+                      class="alert alert-danger d-none"
+                      role="alert"
+                      id="alertMsjError"
+                    ></div>
+                    <button type="submit" class="btn btn-primary">
+                      Enviar
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark mt-5 pt-2 pb-1">
+        <section class="container">
+            <p class="text-secondary text-center mt-4">
+              <i class="bi bi-c-circle me-1"></i>Todos los derechos reservados. EMB
+              envases.
+            </p>
+            <img src="" alt="">
+          </section>
+        </footer>
+  </body>
+</html>
