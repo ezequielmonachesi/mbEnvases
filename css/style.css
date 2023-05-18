@@ -18,6 +18,7 @@ h2,
 }
 .imgZoom {
   filter: grayscale(20%);
+  transition: all 0.5s;
 }
 .imgZoom:hover {
   filter: grayscale(0%);
@@ -109,6 +110,7 @@ h2,
 .cardsZoom {
   filter: grayscale(20%);
   cursor: pointer;
+  transition: all 0.15s;
 }
 .cardsZoom:hover {
   filter: grayscale(0%);
