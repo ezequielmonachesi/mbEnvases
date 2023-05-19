@@ -14,8 +14,6 @@ h2,
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
 }
-.zoom:hover {
-}
 .imgZoom {
   filter: grayscale(20%);
   transition: all 0.5s;
