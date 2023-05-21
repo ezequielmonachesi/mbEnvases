@@ -8,32 +8,37 @@ let cajaDePizza = new Producto(
   ["x25 x50 y más"],
   ["Marrón"],
   "../assets/productos/caja-pizza.jpg",
-  350
+  "delivery"
 );
 let cajaLomo = new Producto(
   "Caja de lomo",
   ["x25 x50 y más"],
   ["Blanco"],
-  "../assets/productos/cajaLomo.jpg"
+  "../assets/productos/cajaLomo.jpg",
+  "delivery"
 );
 let blonda = new Producto(
   "Blonda",
   "N°9 N°10 y más",
   ["Blanco"],
-  "../assets/productos/blonda.jpg"
+  "../assets/productos/blonda.jpg",
+  "descartables"
 );
 let bolsaRinion = new Producto(
   "Bolsa Riñonera",
   "15x20 y más",
   ["Rojo", "Blanco"],
-  "../assets/productos/bolsa-riñon.jpg"
+  "../assets/productos/bolsa-riñon.jpg",
+  "regaleria"
 );
 let papelDobleQ = new Producto(
   "Papel doble químico",
   "76x20x10u y más",
   ["Blanco", "Rojo", "Azul"],
-  "../assets/productos/papel-quimico.jpg"
+  "../assets/productos/papel-quimico.jpg",
+  "papel"
 );
+
 let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo];
 console.log(productos);
 

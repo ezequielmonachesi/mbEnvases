@@ -3,11 +3,13 @@ export default class Producto {
   #medidas;
   #color;
   #img;
-  constructor(nombre, medidas, color = [], img) {
+  #tipo;
+  constructor(nombre, medidas, color = [], img, tipo) {
     this.#nombre = nombre;
     this.#medidas = medidas;
     this.#color = color;
     this.#img = img;
+    this.#tipo = tipo;
   }
   get nombre() {
     return this.#nombre;
@@ -33,6 +35,12 @@ export default class Producto {
   set color(nuevoColor) {
     this.#color = nuevoColor;
   }
+  get tipo() {
+    return this.#tipo;
+  }
+  set tipo(nuevoTipo) {
+    this.#tipo = nuevoTipo;
+  }
 
   toJSOSN(){
     return{
@@ -40,6 +48,7 @@ export default class Producto {
       medidas: this.#medidas,
       color: this.#color,
       img: this.#img,
+      tipo: this.#tipo
     }
   }
 }
