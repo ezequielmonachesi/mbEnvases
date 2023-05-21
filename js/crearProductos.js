@@ -38,8 +38,17 @@ let papelDobleQ = new Producto(
   "../assets/productos/papel-quimico.jpg",
   "papel"
 );
+let bolsaPolipropileno = new Producto(
+  "Bolsa Polipropileno",
+  "4x25, 10x10, y más",
+  ["Transparente"],
+  "../assets/productos/bolsapp.jpg",
+  "bolsa"
+)
 
-let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo];
+
+
+let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo, bolsaPolipropileno];
 
 console.log(productos);
 
@@ -55,8 +64,8 @@ function buscarProducto(e) {
 }
 
 const container = document.querySelector("#cardProductos");
-function mostrarProductos(item) {
-  productos.forEach((item) => {
+function mostrarProductos(array) {
+  array.forEach((item) => {
     // Construir contenido de la card
     const content = `
               <aside class="card position-relative border rounded-3 shadow imgZoom h-100 m-2">
