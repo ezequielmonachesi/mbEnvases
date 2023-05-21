@@ -104,8 +104,6 @@ let papelFilm = new Producto(
 
 let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo, bolsaPolipropileno, bolsaRomi, cubiertos, bolsaKraff, espuminaLaminada, servilletaBar, toallasPlegables, papelObra, papelFilm];
 
-console.log(productos);
-
 formularioBuscador.addEventListener("submit", buscarProducto);
 // buscador
 function buscarProducto(e) {
