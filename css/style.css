@@ -121,6 +121,17 @@ h2,
   width: 250px;
   height: 250px;
 }
+.porMasProductos{
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url(../assets/masProductos.jpg);
+  background-position: center;
+  background-repeat: no-repeat no-repeat;
+  background-size: cover;
+}
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .slide {
