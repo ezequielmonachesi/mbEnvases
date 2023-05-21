@@ -5,50 +5,104 @@ let buscar = document.getElementById("buscar");
 
 let cajaDePizza = new Producto(
   "Caja de pizza",
-  ["x25 x50 y más"],
-  ["Marrón"],
+  ["x25 x50"],
+  ["marron"],
   "../assets/productos/caja-pizza.jpg",
   "delivery"
 );
 let cajaLomo = new Producto(
   "Caja de lomo",
-  ["x25 x50 y más"],
-  ["Blanco"],
+  ["x25 x50"],
+  ["blanco"],
   "../assets/productos/cajaLomo.jpg",
   "delivery"
 );
 let blonda = new Producto(
   "Blonda",
-  "N°9 N°10 y más",
-  ["Blanco"],
+  "N°9 N°10",
+  ["blanco"],
   "../assets/productos/blonda.jpg",
   "descartable"
 );
 let bolsaRinion = new Producto(
   "Bolsa Riñonera",
-  "15x20 y más",
-  ["Rojo", "Blanco"],
+  "15x20",
+  ["rojo", "blanco"],
   "../assets/productos/bolsa-riñon.jpg",
   "regaleria"
 );
 let papelDobleQ = new Producto(
   "Papel doble químico",
-  "76x20x10u y más",
-  ["Blanco", "Rojo", "Azul"],
+  "76x20x10u",
+  ["blanco", "rojo", "azul"],
   "../assets/productos/papel-quimico.jpg",
   "papel"
 );
 let bolsaPolipropileno = new Producto(
   "Bolsa Polipropileno",
-  "4x25, 10x10, y más",
-  ["Transparente"],
+  "4x25, 10x10",
+  ["transparente"],
   "../assets/productos/bolsapp.jpg",
   "bolsa"
 )
+let bolsaRomi = new Producto(
+  "Bolsas Romi",
+  "20x08x24",
+  ["amarillo", "azul"],
+  "../assets/productos/bolsas-romy-color.jpg",
+  "bolsa"
+)
+let cubiertos = new Producto(
+  "Cubiertos Descartables",
+  "de a 4 unidades",
+  ["blanco"],
+  "../assets/productos/Cubiertos.png",
+  "descartable"
+)
+let bolsaKraff = new Producto (
+  "Bolsa Kraff",
+  "N° 1, 2",
+  ["marron"],
+  "../assets/productos/bolsas-kraft.jpg",
+  "bolsa"
+)
+let espuminaLaminada = new Producto(
+  "Espumina Laminada",
+  "1 metro",
+  ["Varios"],
+  "../assets/productos/espumina-laminada.jpg",
+  "espumina"
+)
+let servilletaBar = new Producto(
+  "Servilletas para bares",
+  "x1000, x2000",
+  ["blanco"],
+  "../assets/productos/servilletaBar.png",
+  "servilleta"
+)
+let toallasPlegables = new Producto(
+  "Toallas plegables",
+  "x250",
+  ["blanco"],
+  "../assets/productos/toallas-plegables.jpg",
+  "toalla"
+)
+let papelObra = new Producto(
+  "Papel Obra",
+  "57x30x10u",
+  ["blanco"],
+  "../assets/productos/papel-obra.jpg",
+  "papel"
+)
+let papelFilm = new Producto(
+  "Papel Film",
+  "38x500",
+  ["transparente"],
+  "../assets/productos/papel-film.jpg",
+  "papel"
+)
 
-
-
-let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo, bolsaPolipropileno];
+let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo, bolsaPolipropileno, bolsaRomi, cubiertos, bolsaKraff, espuminaLaminada, servilletaBar, toallasPlegables, papelObra, papelFilm];
 
 console.log(productos);
 
@@ -80,7 +134,7 @@ function mostrarProductos(array) {
                   </article>
                   <ul class="list-unstyled text-start bg-black text-white bg-opacity-50 borde-inf-ul position-absolute bottom-0 start-0 m-0 p-1 cursor-default">
                     <li class="letrasUl">Marcas: Todas</li>
-                    <li class="letrasUl">Medidas: ${item.medidas}</li>
+                    <li class="letrasUl">Medidas: ${item.medidas} y más</li>
                     <li class="letrasUl">Color: ${item.color}</li>
                     <li class="letrasUl">Precio: Consultar</li>
                   </ul>
