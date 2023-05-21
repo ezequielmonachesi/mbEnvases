@@ -22,7 +22,7 @@ let blonda = new Producto(
   "N°9 N°10 y más",
   ["Blanco"],
   "../assets/productos/blonda.jpg",
-  "descartables"
+  "descartable"
 );
 let bolsaRinion = new Producto(
   "Bolsa Riñonera",
@@ -40,6 +40,7 @@ let papelDobleQ = new Producto(
 );
 
 let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo];
+
 console.log(productos);
 
 formularioBuscador.addEventListener("submit", buscarProducto);
