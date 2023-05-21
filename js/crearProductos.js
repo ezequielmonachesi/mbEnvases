@@ -4,7 +4,7 @@ let formularioBuscador = document.querySelector("form");
 let buscar = document.getElementById("buscar");
 
 let cajaDePizza = new Producto(
-  "Caja de piza",
+  "Caja de pizza",
   ["x25 x50 y más"],
   ["Marrón"],
   "../assets/productos/caja-pizza.jpg",
