@@ -119,6 +119,7 @@ let productos = [
   papelFilm,
 ];
 
+formularioBuscador.addEventListener("submit", buscarProducto);
 formularioBuscador.addEventListener("keyup", buscarProducto);
 // buscador
 function buscarProducto(e) {
