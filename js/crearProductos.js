@@ -1,7 +1,7 @@
 import Producto from "./productos.js";
 
 let formularioBuscador = document.querySelector("form");
-let buscar = document.getElementById("buscar");
+let buscar = document.getElementById("buscadorProductos");
 
 let cajaDePizza = new Producto(
   "Caja de pizza",
@@ -44,75 +44,96 @@ let bolsaPolipropileno = new Producto(
   ["transparente"],
   "../assets/productos/bolsapp.jpg",
   "bolsa"
-)
+);
 let bolsaRomi = new Producto(
   "Bolsas Romi",
   "20x08x24",
   ["amarillo", "azul"],
   "../assets/productos/bolsas-romy-color.jpg",
   "bolsa"
-)
+);
 let cubiertos = new Producto(
   "Cubiertos Descartables",
   "de a 4 unidades",
   ["blanco"],
   "../assets/productos/Cubiertos.png",
   "descartable"
-)
-let bolsaKraff = new Producto (
+);
+let bolsaKraff = new Producto(
   "Bolsa Kraff",
   "N° 1, 2",
   ["marron"],
   "../assets/productos/bolsas-kraft.jpg",
   "bolsa"
-)
+);
 let espuminaLaminada = new Producto(
   "Espumina Laminada",
   "1 metro",
   ["Varios"],
   "../assets/productos/espumina-laminada.jpg",
   "espumina"
-)
+);
 let servilletaBar = new Producto(
   "Servilletas para bares",
   "x1000, x2000",
   ["blanco"],
   "../assets/productos/servilletaBar.png",
   "servilleta"
-)
+);
 let toallasPlegables = new Producto(
   "Toallas plegables",
   "x250",
   ["blanco"],
   "../assets/productos/toallas-plegables.jpg",
   "toalla"
-)
+);
 let papelObra = new Producto(
   "Papel Obra",
   "57x30x10u",
   ["blanco"],
   "../assets/productos/papel-obra.jpg",
   "papel"
-)
+);
 let papelFilm = new Producto(
   "Papel Film",
   "38x500",
   ["transparente"],
   "../assets/productos/papel-film.jpg",
   "papel"
-)
+);
 
-let productos = [papelDobleQ, blonda, bolsaRinion, cajaDePizza, cajaLomo, bolsaPolipropileno, bolsaRomi, cubiertos, bolsaKraff, espuminaLaminada, servilletaBar, toallasPlegables, papelObra, papelFilm];
+let productos = [
+  papelDobleQ,
+  blonda,
+  bolsaRinion,
+  cajaDePizza,
+  cajaLomo,
+  bolsaPolipropileno,
+  bolsaRomi,
+  cubiertos,
+  bolsaKraff,
+  espuminaLaminada,
+  servilletaBar,
+  toallasPlegables,
+  papelObra,
+  papelFilm,
+];
 
-formularioBuscador.addEventListener("submit", buscarProducto);
+formularioBuscador.addEventListener("keyup", buscarProducto);
 // buscador
 function buscarProducto(e) {
   e.preventDefault();
-  productos.forEach((producto) => {
-    if (producto.nombre.toLowerCase().includes(buscar.value.toLowerCase())) {
-      mostrarProductos(productos);
+  let aside = document.querySelectorAll("aside");
+  console.log(aside);
+  aside.forEach((aside)=>{
+      aside.classList.add("d-none");
+  })
+  aside.forEach(aside=>{
+    if(aside.textContent.toLowerCase().includes(buscar.value.toLowerCase())){
+      aside.classList.remove("d-none");
+      aside.classList.add("d-block");
     }
-  });
+  })
 }
 
 const container = document.querySelector("#cardProductos");
