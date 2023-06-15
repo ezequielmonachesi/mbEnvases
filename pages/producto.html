@@ -87,40 +87,49 @@
                 ></a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                id="buscadorProductos"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Buscar
-              </button>
-            </form>
           </div>
         </div>
       </nav>
     </header>
-    <main>
+    <main class="position-relative">
       <!-- Breadcrumb -->
-      <section class="container py-2 px-3">
-        <nav aria-label="breadcrumb" class="mt-3">
-          <ol class="breadcrumb p-0">
-            <li class="breadcrumb-item">
-              <a href="../index.html" class="text-success text-decoration-none"
-                >Inicio</a
+      <section class="container py-2 fixed-top breadcrumbNav z-1">
+        <article class="row align-items-center justify-content-center justify-content-md-between">
+          <nav aria-label="breadcrumb" class="mt-3 col-6">
+            <ol class="breadcrumb p-0">
+              <li class="breadcrumb-item">
+                <a
+                  href="../index.html"
+                  class="text-success text-decoration-none"
+                  >Inicio</a
+                >
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Productos
+              </li>
+            </ol>
+          </nav>
+          <div class="col-6 col-md-5 col-lg-3">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-md-2"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Search"
+                id="buscadorProductos"
+              />
+              <button
+                class="btn btn-outline-success d-none d-md-block"
+                type="submit"
               >
-            </li>
-            <li class="breadcrumb-item active" aria-current="page">
-              Productos
-            </li>
-          </ol>
-        </nav>
+                Buscar
+              </button>
+            </form>
+          </div>
+        </article>
       </section>
       <!-- Productos -->
-      <section class="container px-3 mt-3">
+      <section class="container px-3 z-0 productosDiv">
         <article
           class="d-flex flex-wrap justify-content-center"
           id="cardProductos"
