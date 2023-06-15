@@ -144,7 +144,7 @@ function buscarProducto(e) {
   if (contador === 14) {
     document.getElementById(
       "textoNoEncontrado"
-    ).innerHTML = `<p class="px-3 py-3 m-0 border-2">No encontramos resultados para <span class="fw-bold text-success">"${buscar.value}"</span> <br><i class="bi bi-cart-x-fill fs-1 text-success"></i></p>`;
+    ).innerHTML = `<div class="my-5 py-5"><p class="shadow px-3 py-3 m-0 border-2">No encontramos resultados para <span class="fw-bold text-success">"${buscar.value}"</span> <br><i class="bi bi-cart-x-fill fs-1 text-success"></i></p></div>`;
   } else {
     document.getElementById("textoNoEncontrado").innerHTML = "";
   }
