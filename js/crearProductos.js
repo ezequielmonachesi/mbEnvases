@@ -2,7 +2,6 @@ import Producto from "./productos.js";
 
 let formularioBuscador = document.querySelector("form");
 let buscar = document.getElementById("buscadorProductos");
-let cardProductos = document.getElementById("cardProductos");
 
 let cajaDePizza = new Producto(
   "Caja de pizza",
@@ -127,7 +126,8 @@ function buscarProducto(e) {
   e.preventDefault();
   let aside = document.querySelectorAll("aside");
   console.log(aside);
-  
+  let parrafoNoEncontrado = document.createElement("p");
+  parrafoNoEncontrado.innerHTML = `No encontrado`;
   aside.forEach((aside) => {
     aside.classList.add("d-none");
   });
@@ -136,26 +136,18 @@ function buscarProducto(e) {
     if (aside.textContent.toLowerCase().includes(buscar.value.toLowerCase())) {
       aside.classList.remove("d-none");
       aside.classList.add("d-block");
-    }else{
+    } else {
       contador += 1;
     }
   });
 
-  if(contador === 14){
-    console.log('No encontrado')
+  if (contador === 14) {
+    document.getElementById(
+      "textoNoEncontrado"
+    ).innerHTML = `No encontrado <span class="text-secondary">[${buscar.value}]</span>`;
+  } else {
+    document.getElementById("textoNoEncontrado").innerHTML = "";
   }
-
-  //  if(aside.textContent.toLowerCase().includes(buscar.value.toLowerCase()) === true){
-  //    console.log('encontgrado')
-  //  }else{
-  //    console.log('no encontrado')
-  //  }
-  // if (
-  //   aside.classList.contains("d-none") &&
-  //   aside.classList.contains("d-block")
-  // ) {
-  //   console.log("no encontrado");
-  // }
 }
 
 const container = document.querySelector("#cardProductos");
