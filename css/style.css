@@ -138,6 +138,17 @@ h2,
   background-size: cover;
 }
 
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #0d9656;
+}
+.productosDiv{
+  margin-top: 74px;
+}
+.breadcrumbNav{
+  margin-top: 74px;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .slide {
     height: 310px;
