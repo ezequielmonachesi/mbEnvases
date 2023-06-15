@@ -126,15 +126,28 @@ function buscarProducto(e) {
   e.preventDefault();
   let aside = document.querySelectorAll("aside");
   console.log(aside);
-  aside.forEach((aside)=>{
-      aside.classList.add("d-none");
-  })
-  aside.forEach(aside=>{
-    if(aside.textContent.toLowerCase().includes(buscar.value.toLowerCase())){
+  let parrafoNoEncontrado = document.createElement("p");
+  parrafoNoEncontrado.innerHTML = `No encontrado`;
+  aside.forEach((aside) => {
+    aside.classList.add("d-none");
+  });
+  let contador = 0;
+  aside.forEach((aside) => {
+    if (aside.textContent.toLowerCase().includes(buscar.value.toLowerCase())) {
       aside.classList.remove("d-none");
       aside.classList.add("d-block");
+    } else {
+      contador += 1;
     }
-  })
+  });
+
+  if (contador === 14) {
+    document.getElementById(
+      "textoNoEncontrado"
+    ).innerHTML = `<p class="px-3 py-3 m-0 border-2">No encontramos resultados para <span class="fw-bold text-success">"${buscar.value}"</span> <br><i class="bi bi-cart-x-fill fs-1 text-success"></i></p>`;
+  } else {
+    document.getElementById("textoNoEncontrado").innerHTML = "";
+  }
 }
 
 const container = document.querySelector("#cardProductos");
