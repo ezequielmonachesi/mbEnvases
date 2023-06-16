@@ -101,12 +101,20 @@ let papelFilm = new Producto(
   "../assets/productos/papel-film.jpg",
   "papel"
 );
+let cajaEmpanada = new Producto(
+  "Caja de Empanadas",
+  "x 1u, x 50u",
+  ["marrón", "gris"],
+  "../assets/productos/cajaEmpanada.png",
+  "papel"
+);
 
 let productos = [
   papelDobleQ,
   blonda,
   bolsaRinion,
   cajaDePizza,
+  cajaEmpanada,
   cajaLomo,
   bolsaPolipropileno,
   bolsaRomi,
