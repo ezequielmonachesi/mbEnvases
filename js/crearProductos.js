@@ -101,12 +101,62 @@ let papelFilm = new Producto(
   "../assets/productos/papel-film.jpg",
   "papel"
 );
+let cajaEmpanada = new Producto(
+  "Caja de Empanadas",
+  "x 1u, x 50u",
+  ["marrón", "gris"],
+  "../assets/productos/cajaEmpanada.png",
+  "caja"
+);
+let papelManteca = new Producto(
+  "Papel Manteca",
+  "30cmx5m",
+  ["blanco"],
+  "../assets/productos/papelManteca.png",
+  "papel"
+);
+let vasosPlasticos = new Producto(
+  "Vasos Plásticos",
+  "120cc 180cc 220cc",
+  ["varios"],
+  "../assets/productos/vasosPlasticos.png",
+  "vaso"
+);
+let vasosPolipapel = new Producto(
+  "Vasos Polipapel",
+  "8oz 12oz",
+  ["varios"],
+  "../assets/productos/vasosPolipapel.png",
+  "vaso"
+);
+let copasDanubio = new Producto(
+  "Copa Danubio",
+  "x1u x10u",
+  ["varios"],
+  "../assets/productos/copasDanubio.png",
+  "vaso"
+);
+let vasosTermicos = new Producto(
+  "Vaso Térmico",
+  "x1u x10u",
+  ["varios"],
+  "../assets/productos/vasosTermicos.png",
+  "vaso"
+);
+let papelAluminio = new Producto(
+  "Papel Aluminio",
+  "x5m x1Kg",
+  ["plata"],
+  "../assets/productos/papelAluminio.png",
+  "papel"
+);
 
 let productos = [
   papelDobleQ,
   blonda,
   bolsaRinion,
   cajaDePizza,
+  cajaEmpanada,
   cajaLomo,
   bolsaPolipropileno,
   bolsaRomi,
@@ -117,6 +167,12 @@ let productos = [
   toallasPlegables,
   papelObra,
   papelFilm,
+  papelManteca,
+  vasosPlasticos,
+  vasosPolipapel,
+  copasDanubio,
+  vasosTermicos,
+  papelAluminio,
 ];
 
 formularioBuscador.addEventListener("submit", buscarProducto);
@@ -125,7 +181,6 @@ formularioBuscador.addEventListener("keyup", buscarProducto);
 function buscarProducto(e) {
   e.preventDefault();
   let aside = document.querySelectorAll("aside");
-  console.log(aside);
   let parrafoNoEncontrado = document.createElement("p");
   parrafoNoEncontrado.innerHTML = `No encontrado`;
   aside.forEach((aside) => {
@@ -141,7 +196,7 @@ function buscarProducto(e) {
     }
   });
 
-  if (contador === 14) {
+  if (contador === 21) {
     document.getElementById(
       "textoNoEncontrado"
     ).innerHTML = `<div class="my-5 py-5"><p class="shadow px-3 py-3 m-0 border-2">No encontramos resultados para <span class="fw-bold text-success">"${buscar.value}"</span> <br><i class="bi bi-cart-x-fill fs-1 text-success"></i></p></div>`;
