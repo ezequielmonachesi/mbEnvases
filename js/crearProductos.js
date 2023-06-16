@@ -108,6 +108,45 @@ let cajaEmpanada = new Producto(
   "../assets/productos/cajaEmpanada.png",
   "papel"
 );
+let papelManteca = new Producto(
+  "Papel Manteca",
+  "30cmx5m",
+  ["blanco"],
+  "../assets/productos/papelManteca.png",
+  "papel"
+);
+let vasosPlasticos = new Producto(
+  "Vasos Plásticos",
+  "120cc 180cc 220cc",
+  ["varios"],
+  "../assets/productos/vasosPlasticos.png",
+  "papel"
+);
+let vasosPolipapel = new Producto(
+  "Vasos Polipapel",
+  "8oz 12oz",
+  ["varios"],
+  "../assets/productos/vasosPolipapel.png",
+  "papel"
+);
+let copasDanubio = new Producto(
+  "Copa Danubio",
+  "x1u x10u",
+  ["varios"],
+  "../assets/productos/copasDanubio.png",
+  "papel"
+);
+let vasosTermicos = new Producto(
+  "Vaso Térmico",
+  "x1u x10u",
+  ["varios"],
+  "../assets/productos/vasosTermicos.png",
+  "papel"
+);
+
+
+
+
 
 let productos = [
   papelDobleQ,
@@ -125,6 +164,11 @@ let productos = [
   toallasPlegables,
   papelObra,
   papelFilm,
+  papelManteca,
+  vasosPlasticos,
+  vasosPolipapel,
+  copasDanubio,
+  vasosTermicos,
 ];
 
 formularioBuscador.addEventListener("submit", buscarProducto);
