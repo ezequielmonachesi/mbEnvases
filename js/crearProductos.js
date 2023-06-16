@@ -106,7 +106,7 @@ let cajaEmpanada = new Producto(
   "x 1u, x 50u",
   ["marrón", "gris"],
   "../assets/productos/cajaEmpanada.png",
-  "papel"
+  "caja"
 );
 let papelManteca = new Producto(
   "Papel Manteca",
@@ -120,33 +120,36 @@ let vasosPlasticos = new Producto(
   "120cc 180cc 220cc",
   ["varios"],
   "../assets/productos/vasosPlasticos.png",
-  "papel"
+  "vaso"
 );
 let vasosPolipapel = new Producto(
   "Vasos Polipapel",
   "8oz 12oz",
   ["varios"],
   "../assets/productos/vasosPolipapel.png",
-  "papel"
+  "vaso"
 );
 let copasDanubio = new Producto(
   "Copa Danubio",
   "x1u x10u",
   ["varios"],
   "../assets/productos/copasDanubio.png",
-  "papel"
+  "vaso"
 );
 let vasosTermicos = new Producto(
   "Vaso Térmico",
   "x1u x10u",
   ["varios"],
   "../assets/productos/vasosTermicos.png",
+  "vaso"
+);
+let papelAluminio = new Producto(
+  "Papel Aluminio",
+  "x5m x1Kg",
+  ["plata"],
+  "../assets/productos/papelAluminio.png",
   "papel"
 );
-
-
-
-
 
 let productos = [
   papelDobleQ,
@@ -169,6 +172,7 @@ let productos = [
   vasosPolipapel,
   copasDanubio,
   vasosTermicos,
+  papelAluminio,
 ];
 
 formularioBuscador.addEventListener("submit", buscarProducto);
@@ -177,7 +181,6 @@ formularioBuscador.addEventListener("keyup", buscarProducto);
 function buscarProducto(e) {
   e.preventDefault();
   let aside = document.querySelectorAll("aside");
-  console.log(aside);
   let parrafoNoEncontrado = document.createElement("p");
   parrafoNoEncontrado.innerHTML = `No encontrado`;
   aside.forEach((aside) => {
@@ -193,7 +196,7 @@ function buscarProducto(e) {
     }
   });
 
-  if (contador === 14) {
+  if (contador === 21) {
     document.getElementById(
       "textoNoEncontrado"
     ).innerHTML = `<div class="my-5 py-5"><p class="shadow px-3 py-3 m-0 border-2">No encontramos resultados para <span class="fw-bold text-success">"${buscar.value}"</span> <br><i class="bi bi-cart-x-fill fs-1 text-success"></i></p></div>`;
