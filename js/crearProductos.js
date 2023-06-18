@@ -193,7 +193,6 @@ function buscarProducto(e) {
       aside.classList.add("d-block");
     } else {
       contador += 1;
-      console.log(contador)
     }
   });
 
