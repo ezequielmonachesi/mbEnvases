@@ -72,6 +72,27 @@ h2,
   background-repeat: no-repeat no-repeat;
   background-size: cover;
 }
+/* SwiperJS */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .banner {
   background-image: linear-gradient(
       0deg,

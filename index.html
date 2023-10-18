@@ -46,6 +46,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Envases MB San José de Metán Rosario de la Frontera</title>
   </head>
@@ -275,348 +280,214 @@
           </aside>
         </article>
       </section>
-      <!-- Carrusel -->
-      <section
-        class="position-relative"
-        data-aos="fade-up"
-        data-aos-duration="2000"
-      >
+      <!-- Swipper -->
+      <section class="container">
         <h2 class="text-center">Los productos más vendidos</h2>
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-          <article class="p-2 px-md-4 px-lg-5">
-            <div class="carousel-inner p-2 px-md-4 px-lg-5">
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleDark"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-              <div
-                class="carousel-item active p-2 px-md-4 px-lg-5"
-                data-bs-interval="2000"
-              >
-                <article
-                  class="row justify-content-evenly align-items-center mt-4 px-md-0 h-100"
-                >
-                  <aside class="col-6 col-md-3">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article
-                        class="card h-100 shadow position-relative text-center"
+        <article class="row justify-content-center align-items-center">
+          <aside class="col-12">
+            <div
+              class="swiper mySwiper"
+              data-aos="fade-up"
+              data-aos-duration="2000"
+            >
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="py-3">
+                    <aside class="card">
+                      <a
+                        href="./pages/producto.html"
+                        class="text-decoration-none text-dark"
                       >
-                        <img
-                          src="./assets/productos/bolsapp.jpg"
-                          alt="Bolsas PP"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Bolsas<br />polipropil.
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card h-100 shadow position-relative">
-                        <img
-                          src="./assets/productos/papel-quimico.jpg"
-                          alt="papel-quimico"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Papel doble <br />
-                            químico
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i></article
-                    ></a>
-                  </aside>
-                  <aside class="col-6 col-md-3 mt-3 mt-md-0">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card h-100 shadow position-relative">
-                        <img
-                          src="./assets/productos/bolsas-romy-color.jpg"
-                          alt="bolsas-romy-color"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Bolsas<br />Romy color
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3 mt-3 mt-md-0">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card h-100 shadow position-relative">
-                        <img
-                          src="./assets/productos/Cubiertos.png"
-                          alt="toallas-plegables"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Cubiertos <br />
-                            descartables
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                </article>
+                        <article class="card shadow position-relative">
+                          <img
+                            src="./assets/productos/bolsas-romy-color.jpg"
+                            alt="bolsas-romy-color"
+                            class="card-img-top"
+                          />
+                          <aside class="card-body">
+                            <h5 class="text-center m-0">
+                              Bolsas<br />Romy color
+                            </h5>
+                          </aside>
+                          <i
+                            class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
+                          ></i>
+                        </article>
+                      </a>
+                    </aside>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="py-3">
+                    <aside class="card">
+                      <a
+                        href="./pages/producto.html"
+                        class="text-decoration-none text-dark"
+                      >
+                        <article
+                          class="card shadow position-relative text-center"
+                        >
+                          <img
+                            src="./assets/productos/bolsapp.jpg"
+                            alt="Bolsas PP"
+                            class="card-img-top"
+                          />
+                          <aside class="card-body">
+                            <h5 class="text-center m-0">
+                              Bolsas<br />polipropil.
+                            </h5>
+                          </aside>
+                          <i
+                            class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
+                          ></i>
+                        </article>
+                      </a>
+                    </aside>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="py-3">
+                    <aside class="card">
+                      <a
+                        href="./pages/producto.html"
+                        class="text-decoration-none text-dark"
+                      >
+                        <article class="card shadow position-relative">
+                          <img
+                            src="./assets/productos/papel-quimico.jpg"
+                            alt="papel-quimico"
+                            class="card-img-top"
+                          />
+                          <aside class="card-body">
+                            <h5 class="text-center m-0">
+                              Papel doble <br />
+                              químico
+                            </h5>
+                          </aside>
+                          <i
+                            class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
+                          ></i></article
+                      ></a>
+                    </aside>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="py-3">
+                    <aside class="card">
+                      <a
+                        href="./pages/producto.html"
+                        class="text-decoration-none text-dark"
+                      >
+                        <article class="card shadow position-relative">
+                          <img
+                            src="./assets/productos/Cubiertos.png"
+                            alt="toallas-plegables"
+                            class="card-img-top"
+                          />
+                          <aside class="card-body">
+                            <h5 class="text-center m-0">
+                              Cubiertos <br />
+                              descartables
+                            </h5>
+                          </aside>
+                          <i
+                            class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
+                          ></i>
+                        </article>
+                      </a>
+                    </aside>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="py-3">
+                    <aside class="card">
+                      <a
+                        href="./pages/producto.html"
+                        class="text-decoration-none text-dark"
+                      >
+                        <article class="card shadow position-relative">
+                          <img
+                            src="./assets/productos/bolsa-romi.jpg"
+                            alt="bolsa-romi"
+                            class="card-img-top"
+                          />
+                          <aside class="card-body">
+                            <h5 class="text-center m-0">
+                              Bolsas <br />
+                              Romy
+                            </h5>
+                          </aside>
+                          <i
+                            class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
+                          ></i>
+                        </article>
+                      </a>
+                    </aside>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="py-3">
+                    <aside class="card">
+                      <a
+                        href="./pages/producto.html"
+                        class="text-decoration-none text-dark"
+                      >
+                        <article class="card shadow position-relative">
+                          <img
+                            src="./assets/productos/bolsa-riñon.jpg"
+                            alt="bolsa-riñon"
+                            class="card-img-top"
+                          />
+                          <aside class="card-body">
+                            <h5 class="text-center m-0">
+                              Bolsas<br />
+                              riñon
+                            </h5>
+                          </aside>
+                          <i
+                            class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
+                          ></i>
+                        </article>
+                      </a>
+                    </aside>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="py-3">
+                    <aside class="card">
+                      <a
+                        href="./pages/producto.html"
+                        class="text-decoration-none text-dark"
+                      >
+                        <article class="card shadow position-relative">
+                          <img
+                            src="./assets/productos/papel-kraft.jpg"
+                            alt="papel-kraff"
+                            class="card-img-top"
+                          />
+                          <aside class="card-body">
+                            <h5 class="text-center m-0">
+                              Papel <br />
+                              kraff
+                            </h5>
+                          </aside>
+                          <i
+                            class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
+                          ></i>
+                        </article>
+                      </a>
+                    </aside>
+                  </div>
+                </div>
               </div>
-              <div
-                class="carousel-item p-2 px-md-4 px-lg-5"
-                data-bs-interval="2000"
-              >
-                <article
-                  class="row justify-content-evenly align-items-center mt-4 px-md-0"
-                >
-                  <aside class="col-6 col-md-3">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/bolsa-romi.jpg"
-                          alt="bolsa-romi"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Bolsas <br />
-                            Romy
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/bolsa-riñon.jpg"
-                          alt="bolsa-riñon"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Bolsas<br />
-                            riñon
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3 mt-3 mt-md-0">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/papel-film.jpg"
-                          alt="papel-film"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Papel <br />
-                            film
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3 mt-3 mt-md-0">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/bolsas-kraft.jpg"
-                          alt="bolsas-kraff"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Bolsas <br />
-                            kraff
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                </article>
-              </div>
-              <div
-                class="carousel-item p-2 px-md-4 px-lg-5"
-                data-bs-interval="2000"
-              >
-                <article
-                  class="row justify-content-evenly align-items-center mt-4 px-md-0 h-100"
-                >
-                  <aside class="col-6 col-md-3">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/espumina-laminada.jpg"
-                          alt="espumina-laminada"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Espumina <br />
-                            laminada
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/papel-kraft.jpg"
-                          alt="papel-kraff"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Papel <br />
-                            kraff
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3 mt-3 mt-md-0">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/papel-obra.jpg"
-                          alt="papel-obra"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Papel <br />
-                            obra
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                  <aside class="col-6 col-md-3 mt-3 mt-md-0">
-                    <a
-                      href="./pages/producto.html"
-                      class="text-decoration-none text-dark"
-                    >
-                      <article class="card shadow position-relative">
-                        <img
-                          src="./assets/productos/servilletaBar.png"
-                          alt="caja-pizza"
-                          class="card-img-top"
-                        />
-                        <aside class="card-body">
-                          <h5 class="text-center m-0">
-                            Servilletas<br />
-                            de bares
-                          </h5>
-                        </aside>
-                        <i
-                          class="bi bi-star-fill fs-2 text-warning position-absolute start-100 top-0 translate-middle"
-                        ></i>
-                      </article>
-                    </a>
-                  </aside>
-                </article>
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
-          </article>
-        </div>
+          </aside>
+        </article>
       </section>
       <!-- Secciones de imagenes -->
-      <section class="container py-4 mb-2">
+      <section class="container py-4 mb-2 mt-2">
         <article class="row justify-content-evenly gy-4 gy-md-5">
           <aside
             class="col-md-4 order-1 order-md-0"
@@ -979,6 +850,31 @@
     <script>
       AOS.init({
         once: true,
+      });
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        freeMode: true,
+        breakpoints: {
+          640: {
+            slidesPerView: 5,
+            spaceBetween: 40,
+          },
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
     </script>
   </body>
